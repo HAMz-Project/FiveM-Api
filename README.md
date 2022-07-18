@@ -3,7 +3,8 @@ Fivem Api Documentation
 
 # User
 User Session (GET) : https://forum.cfx.re/session/current.json </br>
-User Information (GET) : https://forum.cfx.re/u/{username}.json
+Information (GET) : https://forum.cfx.re/u/{username}.json
+CSRF Session (GET) : https://forum.cfx.re/session/csrf.json
 
 # Server
 Main Information (GET) : IP:PORT/info.json </br>
