@@ -2,10 +2,10 @@
 Fivem Api Documentation
 
 # User
-User Session : https://forum.cfx.re/session/current.json </br>
-User Information : https://forum.cfx.re/u/{username}.json
+User Session (GET) : https://forum.cfx.re/session/current.json </br>
+User Information (GET) : https://forum.cfx.re/u/{username}.json
 
 # Server
-Main Information : IP:PORT/info.json </br>
-Dynamic Information : IP:PORT/dynamic.json </br>
-Player Information : IP:PORT/players.json
+Main Information (GET) : IP:PORT/info.json </br>
+Dynamic Information (GET) : IP:PORT/dynamic.json </br>
+Player Information (GET) : IP:PORT/players.json
