@@ -29,5 +29,7 @@ Player Playtime (GET)         : https://lambda.fivem.net/api/ticket/playtimes/{i
 Promotions (GET)              : https://runtime.fivem.net/promotions_targeting.json </br>
 
 # FiveM App
-Build Change Log  : https://changelogs-live.fivem.net/api/changelog/versions/{buildversion} </br>
-NUI Blacklist     : https://runtime.fivem.net/nui-blacklist.json </br>
+Build Change Log (GET): https://changelogs-live.fivem.net/api/changelog/versions/{buildversion} </br>
+NUI Blacklist (GET)   : https://runtime.fivem.net/nui-blacklist.json </br>
+Players Count (GET)   : https://runtime.fivem.net/counts.json </br>
+Tweet (GET)           : https://runtime.fivem.net/tweets.json </br>
