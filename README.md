@@ -33,3 +33,4 @@ Build Change Log (GET): https://changelogs-live.fivem.net/api/changelog/versions
 NUI Blacklist (GET)   : https://runtime.fivem.net/nui-blacklist.json </br>
 Players Count (GET)   : https://runtime.fivem.net/counts.json </br>
 Tweet (GET)           : https://runtime.fivem.net/tweets.json </br>
+Artifact Data (GET)   : https://changelogs-live.fivem.net/api/changelog/versions/win32/server
