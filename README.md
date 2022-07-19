@@ -26,3 +26,6 @@ All Server Data (GET)         : https://servers-frontend.fivem.net/api/servers/s
 Top Server (GET)              : https://servers-frontend.fivem.net/api/servers/top/{language} </br>
 Upvote Informartion (GET)     : https://servers-frontend.fivem.net/api/upvote/ (header seperti diatas) </br>
 Player Playtime (GET)         : https://lambda.fivem.net/api/ticket/playtimes/{ip:port}?identifiers[]={identifier}
+
+# Artifact
+Build Change Log   : https://changelogs-live.fivem.net/api/changelog/versions/{buildversion}
