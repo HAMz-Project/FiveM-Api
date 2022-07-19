@@ -24,4 +24,5 @@ Player Information (GET)      : IP:PORT/players.json </br>
 Server List Information (GET) : https://servers-frontend.fivem.net/api/servers/single/{address} </br>
 All Server Data (GET)         : https://servers-frontend.fivem.net/api/servers/stream/1658188050/ </br>
 Top Server (GET)              : https://servers-frontend.fivem.net/api/servers/top/{language} </br>
-Upvote Informartion (GET)     : https://servers-frontend.fivem.net/api/upvote/ (header seperti diatas)
+Upvote Informartion (GET)     : https://servers-frontend.fivem.net/api/upvote/ (header seperti diatas) </br>
+Player Playtime (GET)         : https://lambda.fivem.net/api/ticket/playtimes/{ip:port}?identifiers[]={identifier}
