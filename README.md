@@ -6,13 +6,13 @@ User Session (GET)  : https://forum.cfx.re/session/current.json </br>
 Information (GET)   : https://forum.cfx.re/u/{username}.json </br>
 CSRF Session (GET)  : https://forum.cfx.re/session/csrf.json </br>
 Send Email (POST)   : https://forum.cfx.re/u/action/send_activation_email </br>
-                      Header : {</br>
-                          'Cfx-Entitlement-Ticket': {input ownership ticket},</br>
-                          'x-requested-with': 'XMLHttpRequest',</br>
-                          'discourse-present': 'true',</br>
-                          'x-csrf-token": {input csrf},</br>
-                      }
-                      Data = username: {input your username}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;Header : {</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Cfx-Entitlement-Ticket': {input ownership ticket},</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'x-requested-with': 'XMLHttpRequest',</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'discourse-present': 'true',</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'x-csrf-token": {input csrf},</br>
+&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+&nbsp;&nbsp;&nbsp;&nbsp;Data = username: {input your username}</br>
 
 # Server
 Main Information (GET) : IP:PORT/info.json </br>
