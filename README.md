@@ -17,20 +17,29 @@ Fivem Api Documentation
 &nbsp;&nbsp;&nbsp;&nbsp;}</br>
 &nbsp;&nbsp;&nbsp;&nbsp;Data = username: {input your username}</br>
 
-## Server
+## FiveM
 - Main Information (GET)        : http://{ip:port}/info.json </br>
 - Dynamic Information (GET)     : http://{ip:port}/dynamic.json </br>
 - Player Information (GET)      : http://{ip:port}/players.json </br>
 - Server List Information (GET) : https://servers-frontend.fivem.net/api/servers/single/{address} </br>
-- All Server Data (GET)         : https://servers-frontend.fivem.net/api/servers/stream/1658188050/ </br>
-- Top Server (GET)              : https://servers-frontend.fivem.net/api/servers/top/{language} </br>
+- All Server Data (GET)         : https://servers-frontend.fivem.net/api/servers/streamRedir </br>
+- Top Server (Country) (GET)    : https://servers-frontend.fivem.net/api/servers/top/{language} </br>
 - Upvote Informartion (GET)     : https://servers-frontend.fivem.net/api/upvote/ (header seperti diatas) </br>
 - Player Playtime (GET)         : https://lambda.fivem.net/api/ticket/playtimes/{ip:port}?identifiers[]={identifier} </br>
 - Promotions (GET)              : https://runtime.fivem.net/promotions_targeting.json </br>
-
-## FiveM App
-- Build Change Log (GET): https://changelogs-live.fivem.net/api/changelog/versions/{buildversion} </br>
-- NUI Blacklist (GET)   : https://runtime.fivem.net/nui-blacklist.json </br>
-- Players Count (GET)   : https://runtime.fivem.net/counts.json </br>
-- Tweet (GET)           : https://runtime.fivem.net/tweets.json </br>
-- Artifact Data (GET)   : https://changelogs-live.fivem.net/api/changelog/versions/win32/server
+- CnL (GET)                     : https://lambda.fivem.net </br>
+- CnL Heartbeat (GET)           : https://cnl-hb-live.fivem.net </br>
+- Top Server (GET)              : https://runtime.fivem.net/pins.json </br>
+- Sentry Login (GET)            : https://sentry.fivem.net/auth/login </br>
+- Build Change Log (GET)        : https://changelogs-live.fivem.net/api/changelog/versions/{buildversion} </br>
+- NUI Blacklist (GET)           : https://runtime.fivem.net/nui-blacklist.json </br>
+- Players Count (GET)           : https://runtime.fivem.net/counts.json </br>
+- Players Count FiveM (GET)     : https://static.cfx.re/runtime/counts.json </br>
+- Players Count RedM (GET)      : https://static.cfx.re/runtime/counts_rdr3.json </br>
+- Tweet (GET)                   : https://runtime.fivem.net/tweets.json </br>
+- Artifact Data (GET)           : https://changelogs-live.fivem.net/api/changelog/versions/win32/server </br>
+- Loading Screen (GET)          : http://niklasvh.github.io/WebGL-GTA or https://runtime.fivem.net/loadscreen/spotlight-2/WebGL-GTA </br>
+- Pool Size Limits FiveM (GET)  : https://content.cfx.re/mirrors/client/pool-size-limits/fivem.json </br>
+- Pool Size Limits RedM (GET)   : https://content.cfx.re/mirrors/client/pool-size-limits/redm.json </br>
+- Native FiveM (GET)            : https://static.cfx.re/natives/natives.lua </br>
+- Native RedM (GET)             : https://static.cfx.re/natives/natives_rdr3.lua </br>
