@@ -1,6 +1,10 @@
 # FiveM & Cfx.re API Documentation
 
-Unofficial reference for Cfx.re, FiveM, RedM, and FXServer HTTP endpoints.
+Unofficial reference for Cfx.re, FiveM, RedM, and FXServer HTTP endpoints.  
+**Last Updated:** November 4, 2026
+
+> [!NOTE]
+> Cfx.re frequently updates or migrates its internal infrastructure. If you find an endpoint that no longer works, does not exist anymore, or is missing from this documentation, please open a **Pull Request** or submit an **Issue**.
 
 > [!IMPORTANT]
 > Cfx.re migrated the server list API from `servers-frontend.fivem.net` to `frontend.cfx-services.net` and `gss.cfx-services.net`. Requests to the legacy `servers-frontend.fivem.net/api/servers/single/{id}` endpoint now return `404 Not Found`.
@@ -97,3 +101,35 @@ The Cfx.re forum runs on Discourse and exposes standard Discourse JSON endpoints
   "X-CSRF-Token": "<csrf_token>",
   "Content-Type": "application/x-www-form-urlencoded"
 }
+```
+
+**Body (Form Data):**
+```ini
+username=<your_username>
+```
+
+---
+
+## 5. Deprecated & Removed Endpoints
+
+> [!CAUTION]
+> The following endpoints from older FiveM API documentation are offline, restricted, or have been permanently replaced. Do not use them in new projects.
+
+| Legacy Endpoint | Status | Replacement / Reason |
+| :--- | :--- | :--- |
+| `https://servers-frontend.fivem.net/api/servers/single/{address}` | `404 Not Found` | Replaced by `https://frontend.cfx-services.net/api/servers/single/{joinId}` |
+| `https://servers-frontend.fivem.net/api/servers/streamRedir` | `404 Not Found` | Replaced by `https://frontend.cfx-services.net/api/servers/streamRedir/` |
+| `https://servers-frontend.fivem.net/api/servers/top/{language}` | `404 Not Found` | Replaced by `https://gss.cfx-services.net/v1/public/featured-servers/fivem` |
+| `https://runtime.fivem.net/tweets.json` | `404 Not Found` | Replaced by `https://gss.cfx-services.net/v1/public/tweets` |
+| `https://changelogs-live.fivem.net/api/changelog/versions/{build}` | `404 Not Found` | Requires OS/target path: `/api/changelog/versions/{win32\|linux}/server/{build}` |
+| `https://lambda.fivem.net/api/ticket/playtimes/{ip:port}?identifiers[]={id}` | `503 Unavailable` | Decommissioned; no public replacement. |
+| `https://lambda.fivem.net` | `403 / 503` | Internal CnL service; blocked from public access. |
+| `https://cnl-hb-live.fivem.net` | `Unreachable` | Legacy CnL heartbeat endpoint; offline. |
+| `https://sentry.fivem.net/auth/login` | `Unreachable` | Internal Sentry instance; offline. |
+| `https://runtime.fivem.net/loadscreen/spotlight-2/WebGL-GTA` | `Obsolete` | Legacy client loadscreen asset. |
+
+---
+
+## Contributing
+
+If any endpoint listed in this documentation is outdated, broken, or missing, please open a **Pull Request** with the updated URL and details.
